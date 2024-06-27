@@ -29,7 +29,7 @@ targets:
     builders:
       json_serializable:
         options:
-          checked: true
+          checked: false
           any_map: true
           disallow_unrecognized_keys: false
           field_rename: snake
@@ -40,4 +40,4 @@ targets:
       source_gen:combining_builder:
         options:
           build_extensions:
-            '^lib/src/{{}}.dart': 'lib/src/generated/{{}}.g.dart'
+            "^lib/src/{{}}.dart": "lib/src/generated/{{}}.g.dart"
