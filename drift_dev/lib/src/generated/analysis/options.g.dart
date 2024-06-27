@@ -10,37 +10,6 @@ DriftOptions _$DriftOptionsFromJson(Map json) => $checkedCreate(
       'DriftOptions',
       json,
       ($checkedConvert) {
-        $checkKeys(
-          json,
-          allowedKeys: const [
-            'write_from_json_string_constructor',
-            'override_hash_and_equals_in_result_sets',
-            'skip_verification_code',
-            'use_data_class_name_for_companions',
-            'use_column_name_as_json_key_when_defined_in_moor_file',
-            'use_sql_column_name_as_json_key',
-            'generate_connect_constructor',
-            'generate_manager',
-            'sqlite_modules',
-            'sqlite',
-            'sql',
-            'data_class_to_companions',
-            'mutable_classes',
-            'raw_result_set_data',
-            'apply_converters_on_variables',
-            'generate_values_in_copy_with',
-            'named_parameters',
-            'named_parameters_always_required',
-            'scoped_dart_components',
-            'store_date_time_values_as_text',
-            'case_from_dart_to_sql',
-            'write_to_columns_mixins',
-            'assume_correct_reference',
-            'has_separate_analyzer',
-            'preamble',
-            'fatal_warnings'
-          ],
-        );
         final val = DriftOptions(
           generateFromJsonStringConstructor: $checkedConvert(
               'write_from_json_string_constructor', (v) => v as bool? ?? false),
@@ -201,10 +170,6 @@ DialectOptions _$DialectOptionsFromJson(Map json) => $checkedCreate(
       'DialectOptions',
       json,
       ($checkedConvert) {
-        $checkKeys(
-          json,
-          allowedKeys: const ['dialect', 'dialects', 'options'],
-        );
         final val = DialectOptions(
           $checkedConvert(
               'dialect', (v) => $enumDecodeNullable(_$SqlDialectEnumMap, v)),
@@ -242,10 +207,6 @@ SqliteAnalysisOptions _$SqliteAnalysisOptionsFromJson(Map json) =>
       'SqliteAnalysisOptions',
       json,
       ($checkedConvert) {
-        $checkKeys(
-          json,
-          allowedKeys: const ['modules', 'version', 'known_functions'],
-        );
         final val = SqliteAnalysisOptions(
           modules: $checkedConvert(
               'modules',
