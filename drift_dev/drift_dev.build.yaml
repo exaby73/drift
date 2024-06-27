@@ -31,7 +31,7 @@ targets:
         options:
           checked: true
           any_map: true
-          disallow_unrecognized_keys: true
+          disallow_unrecognized_keys: false
           field_rename: snake
           explicit_to_json: true
         generate_for:
